@@ -1,16 +1,16 @@
 <?php
 /**
- * 这是 Typecho 0.9 系统的一套默认皮肤
+ * 自己将要实现的一套主题
  * 
- * @package Typecho Replica Theme 
- * @author Typecho Team
- * @version 1.2
- * @link http://typecho.org
+ * @package Lyric
+ * @author  Lyric
+ * @version 0.0.1
+ * @link    http://192.168.1.8/lyric/
  */
 
-if (!defined('__TYPECHO_ROOT_DIR__')) exit;
- $this->need('header.php');
- ?>
+	if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+  $this->need('header.php');
+?>
 
 <div class="col-mb-12 col-8" id="main" role="main">
 	<?php while($this->next()): ?>
@@ -19,8 +19,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 			</h2>
 			<ul class="post-meta">
-				<li itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
+				<li itemprop="heat" itemscope>
+					<?php _e('热度: '); ?><?php $this->views(); ?>
 				</li>
 				<li>
 					<?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
