@@ -2,7 +2,7 @@
  * @Author: lyric 
  * @Date: 2020-01-09 12:46:17 
  * @Last Modified by: lyric
- * @Last Modified time: 2020-01-10 09:28:19
+ * @Last Modified time: 2020-01-10 11:52:05
  */
 
 
@@ -18,8 +18,8 @@ $(function() {
   })
   // 无论结果如何 在ajax响应完成后触发
   $(document).on('pjax:complete', () => {
-      $('.loading').fadeOut()
       changeNav()
+      $('.loading').fadeOut()
   })
   // 浏览器前进后退替换内容之后
   $(document).on('pjax:end', () => {
