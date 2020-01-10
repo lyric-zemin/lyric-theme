@@ -2,7 +2,7 @@
  * @Author: lyric 
  * @Date: 2020-01-09 12:46:17 
  * @Last Modified by: lyric
- * @Last Modified time: 2020-01-09 15:36:48
+ * @Last Modified time: 2020-01-10 09:28:19
  */
 
 
@@ -167,3 +167,12 @@ $(function() {
  */
 console.log('%cLyric ❤ Echo%c www.lyric.me',
             'line-height:28px;padding:4px;background:#3f51b5;color:#fff;font-size:14px;','padding:4px; color:#673ab7');
+
+
+/** 
+ * prism.js 启动 (需要editormd解析完成后执行,利用定时器延时执行)
+*/
+setTimeout(Prism.highlightAll, 50)
+$(document).on('pjax:success', () => {
+    setTimeout(Prism.highlightAll, 50)
+})

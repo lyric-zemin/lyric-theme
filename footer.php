@@ -10,6 +10,7 @@
 
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+<script src="<?php $this->options->themeUrl('js/prism.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
 
 <?php $this->footer(); ?>

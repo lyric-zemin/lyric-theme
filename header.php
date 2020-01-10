@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.min.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/prism.css'); ?>">
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
@@ -46,7 +47,7 @@
             <div class="site-search col-3 kit-hidden-tb">
                 <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
                     <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
-                    <input type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
+                    <input type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" required />
                     <button type="submit" class="submit"><?php _e('搜索'); ?></button>
                 </form>
             </div>
