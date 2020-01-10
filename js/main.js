@@ -2,7 +2,7 @@
  * @Author: lyric 
  * @Date: 2020-01-09 12:46:17 
  * @Last Modified by: lyric
- * @Last Modified time: 2020-01-10 11:52:05
+ * @Last Modified time: 2020-01-10 15:17:46
  */
 
 
@@ -114,7 +114,7 @@ $(function() {
         <style>
             #top {
                 position:fixed;
-                z-index:999;
+                z-index:50;
                 right:20px;
                 bottom:5%;
                 width: 3.5em;

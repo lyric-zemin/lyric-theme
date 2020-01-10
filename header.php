@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/prism.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/zoom.min.css'); ?>">
 
     <!--[if lt IE 9]>
     <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>

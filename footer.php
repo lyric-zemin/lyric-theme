@@ -12,6 +12,7 @@
 <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 <script src="<?php $this->options->themeUrl('js/prism.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/zoom.js'); ?>"></script>
 
 <?php $this->footer(); ?>
 </body><!-- end body -->
