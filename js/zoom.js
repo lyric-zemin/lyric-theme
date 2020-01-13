@@ -2,7 +2,7 @@
  * @Author: lyric 
  * @Date: 2020-01-10 13:38:14 
  * @Last Modified by: lyric
- * @Last Modified time: 2020-01-10 15:34:01
+ * @Last Modified time: 2020-01-13 15:25:18
  */
 
 
@@ -39,10 +39,11 @@ class Zoom {
     var self = this
     var $wrap = $('.zoom-wrap')
     if ($wrap.length) {
-      $wrap.find('img').attr('src', self.img)
-      $wrap.find('img').attr('alt', self.alt)
-      $('.zoom-wrap').show(0)
-      $wrap.find('img').attr('class', 'slideInLeft')
+      var $img = $wrap.find('img')
+      $img.attr('src', self.img)
+      $img.attr('alt', self.alt)
+      $img.attr('class', 'slideInLeft')
+      $wrap.show(0)
     } else {
       var $h = $(`
         <div class="zoom-wrap">
@@ -82,7 +83,7 @@ class Zoom {
     var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
     var flag = true;  
     for (var v = 0; v < Agents.length; v++) {
-        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+        if (userAgentInfo.indexOf(Agents[v]) > -1) {
             flag = false;
             break;
         }  
