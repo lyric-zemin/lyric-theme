@@ -2,7 +2,7 @@
  * @Author: lyric 
  * @Date: 2020-01-10 13:38:14 
  * @Last Modified by: lyric
- * @Last Modified time: 2020-01-13 15:25:18
+ * @Last Modified time: 2020-01-14 14:51:31
  */
 
 
@@ -40,9 +40,11 @@ class Zoom {
     var $wrap = $('.zoom-wrap')
     if ($wrap.length) {
       var $img = $wrap.find('img')
-      $img.attr('src', self.img)
-      $img.attr('alt', self.alt)
-      $img.attr('class', 'slideInLeft')
+      $img.attr({
+        'src': self.img,
+        'alt': self.alt,
+        'class': 'slideInLeft'
+      })
       $wrap.show(0)
     } else {
       var $h = $(`
