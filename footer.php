@@ -13,6 +13,7 @@
 <script src="<?php $this->options->themeUrl('js/prism.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/zoom.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/scroll.js'); ?>"></script>
 
 <?php $this->footer(); ?>
 </body><!-- end body -->

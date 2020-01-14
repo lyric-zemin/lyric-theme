@@ -157,3 +157,18 @@ code.url {
     transform: translate3d(calc(3.5em + 20px), 0, 0);
   }
 }
+
+@media (min-width: 991px) {
+  .markdown-toc.editormd-markdown-toc {
+    position: fixed;
+    left: calc(50% + 238px);
+    bottom: 0;
+    max-height: 180px;
+    overflow: hidden;
+  }
+  .markdown-toc-list a.on {
+    transition: .5s;
+    background-color: #4183c4;
+    color: #fff;
+  }
+}

@@ -16,7 +16,7 @@
         <ul class="widget-list">
         <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
         <?php while($comments->next()): ?>
-            <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?></li>
+            <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(13, '...'); ?></li>
         <?php endwhile; ?>
         </ul>
     </section>
