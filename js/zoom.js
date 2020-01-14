@@ -2,7 +2,7 @@
  * @Author: lyric 
  * @Date: 2020-01-10 13:38:14 
  * @Last Modified by: lyric
- * @Last Modified time: 2020-01-14 14:51:31
+ * @Last Modified time: 2020-01-14 15:07:32
  */
 
 
@@ -13,7 +13,7 @@
  */
 class Zoom {
   constructor(wrap) {
-    if (this.IsPC()) {
+    if (Zoom.isPC()) {
       this.wrap = wrap
       this.init()
     } else {
@@ -80,7 +80,7 @@ class Zoom {
     })
   }
 
-  IsPC() {
+  static isPC() {
     var userAgentInfo = navigator.userAgent;
     var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
     var flag = true;  
