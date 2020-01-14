@@ -2,7 +2,7 @@
  * @Author: lyric 
  * @Date: 2020-01-09 12:46:17 
  * @Last Modified by: lyric
- * @Last Modified time: 2020-01-10 15:17:46
+ * @Last Modified time: 2020-01-14 14:52:59
  */
 
 
@@ -49,6 +49,7 @@ $(function() {
         width: 20px;
         height: 15px;
         animation: fade 1.2s linear;
+        pointer-events:none;
     }
     .heart:before,
     .heart:after {
